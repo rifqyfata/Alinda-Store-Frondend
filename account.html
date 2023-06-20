@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- link CSS  -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- logo title bar -->
+  <link rel="icon" href="assets/img/logo_alinda.png" type="image/x-icon" />
+
+  <title>Toko Alinda | Account</title>
+</head>
+
+<body>
+  <!-- navabar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+    <div class="container my-1">
+      <a href="index.html"><img src="assets/img/alinda_store.png" class="logo" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="menu navbar-nav mx-auto justify-content-center me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link menu-nav px-2">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="all-produk.html" class="nav-link menu-nav px-2">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link menu-nav px-2">Store</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link menu-nav px-2">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="menu navbar-nav">
+          <li class="nav-item">
+            <a href="cart.html" class="btn me-2 nav-icon"><i class="bi bi-cart-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="account.html" class="active btn nav-icon"><i class="active bi bi-person-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navabar end -->
+
+  <!-- section acoount -->
+  <section id="account">
+    <div class="container">
+        <div class=" row">
+            <div class="col-md-4 mt-5">
+                <ul class="nav menu-ul-account flex-column" id="nav-option">
+                    <!-- my account -->
+                    <li class="nav-item">
+                        <a class="nav-link menu-account" data-bs-toggle="tab" href="#my-account">
+                            <i class="bi bi-person me-3"></i>Account
+                        </a>
+                    </li>
+                    <!-- end -->
+
+                    <!-- my addres -->
+                    <li class="nav-item">
+                        <a class="nav-link b menu-account" data-bs-toggle="tab" href="#address">
+                            <i class="bi bi-pin-map me-3"></i> Alamat
+                        </a>
+                    </li>
+                    <!-- end -->
+
+                    <!-- order -->
+                    <li class="nav-item">
+                        <a class="nav-link b menu-account" data-bs-toggle="tab" href="#orders">
+                            <i class="bi bi-truck me-3"></i> Order
+                        </a>
+                    </li>
+                    <!-- end -->
+
+                    <!-- log out -->
+                    <li class="nav-item">
+                        <a class="nav-link a menu-account" href="login.html">
+                            <i class="bi bi-box-arrow-right me-3"></i> Logout
+                        </a>
+                    </li>
+                    <!-- end -->
+                </ul>
+            </div>
+
+            <div class="col-md-8 mt-5">
+                <div class="active show mb-3">
+                    <div class="card-account">
+                        <!-- <h5 class="">Hello Rifqy!</h5> -->
+                        <p class="pt-3 px-3"><span class="hallo align-bottom">Hallo Rifqy, </span>Selamat datang di halaman profil kamu, dihalaman ini kamu bisa melihat account kamu, alamat kamu, dan melihat orderanmu</p>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <!-- my account -->
+                    <div class="tab-pane active fade" id="my-account">
+                        <div class="card-account">
+                                <h5 class="head-account text-center py-3">My Account</h5>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-md-12">
+                                            <label>Nama <span class="required">*</span></label>
+                                            <input required="" class="form-control" name="name" type="text">
+                                        </div>
+                                        <div class="mt-3 form-group col-md-12">
+                                            <label>Email <span class="required">*</span></label>
+                                            <input required="" class="form-control" name="email" type="email">
+                                        </div>
+                                        <div class="mt-3 form-group col-md-12">
+                                            <label>No. Hp <span class="required">*</span></label>
+                                            <input required="" class="form-control" name="tel"
+                                                type="tel">
+                                        </div>
+                                        <div class="mt-3 form-group col-md-12">
+                                            <label class="pt-2">Password <span class="required">*</span></label>
+                                            <input required="" class="form-control" name="password"
+                                                type="password">
+                                        </div>
+                                        <div class="mt-3 form-group psw col-md-12">
+                                            <label class="pt-2">Password Baru <span class="required">*</span></label>
+                                            <input required="" class="form-control" name="npassword" type="password">
+                                        </div>
+                                        <div class="mt-2 form-group col-md-12">
+                                            <label class="pt-2">Konfirmasi Password <span class="required">*</span></label>
+                                            <input required="" class="form-control" name="cpassword" type="password">
+                                        </div>
+                                        <div class="mt-5 text-center col-md-12">
+                                            <button type="submit" class="btn button-save px-5 py-2 rounded-pill" name="submit"
+                                                value="Submit">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+
+                    <!-- my addres -->
+                    <div class="tab-pane fade" id="address">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card-account">
+                                    <h5 class="head-account text-center py-3">Alamat</h5>
+                                    <div class="card-body">
+                                        <address>Desa. Bunderan 02/01, Kec. Wonosalam
+                                            Kab. Demak <br><br> 59571
+                                        </address>
+                                        <a href="#" class="edit">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+
+                    <!-- order -->
+                    <div class="tab-pane fade" id="orders">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card-account">
+                                    <h5 class="head-account text-center py-3">Orderan</h5>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Produk</th>
+                                                        <th>Tanggal</th>
+                                                        <th>Status</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Benang Jahit</td>
+                                                        <td>27 April 2023</td>
+                                                        <td>Completed</td>
+                                                        <td>Rp. 500.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- section acoount end-->
+
+  <!-- footer section -->
+  <div class="footer-wan">
+    <div class="container">
+      <div class="row pb-4">
+        <div class="mt-3 col-lg-4 col-md-4 col-sm-6 text-center">
+          <img src="assets/img/alinda_store.png" class="ali" alt="">
+          <p class="p-footer pt-3">Dapatkan semua informasi terbaru tentang barang baru yang ready stock hanya
+            di Alinda
+            store</p>
+        </div>
+        <div class="mt-3 col-lg-4 col-md-4 col-sm-6 text-center">
+          <h3 class="hatri-footer">Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Produk</a></li>
+            <li><a href="index.html">Store</a></li>
+            <li><a href="index.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mt-3 col-lg-4 col-md-4 col-sm-12 text-sm-center text-center">
+          <h3 class="hatri-footer">Information</h3>
+          <ul>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="mt-5 col-lg-12 col-md-12 col-sm-12">
+          <div class="col medsos">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="my-2 text-center">
+            &copy; Copyright 2023 - <strong><span>Alinda Store</span></strong>. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section end-->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

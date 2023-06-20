@@ -1,0 +1,515 @@
+<nav class="navbar navbar-expand-lg fixed-top shadow-lg">
+    <div class=" container my-2">
+      <a href="index.html"><img src="assets/img/alinda_store.png" class="logo" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mx-auto justify-content-center me-auto mb-2 mb-lg-0">
+          <li><a href="#hero" class=" nav-link px-2">Home</a></li>
+          <li><a href="#product" class=" nav-link px-2">Product</a></li>
+          <li><a href="#store" class=" nav-link px-2">Store</a></li>
+          <li><a href="#contact" class=" nav-link px-2">Contact</a></li>
+        </ul>
+        <form class="d-flex">
+          <button type="button" class="btn border border-light shadow-sm button-sign-up rounded-pill me-2">
+            Sign-up
+          </button>
+          <button type="button" class="btn shadow-sm button-login rounded-pill">
+            Login
+          </button>
+          <a href="cart.html" class=" btn  me-2 nav-cart"><i class="bi bi-cart-fill"></i></a>
+          <a href="" class=" btn nav-user"><i class="bi bi-person-fill"></i></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+--------pop up--------
+
+<div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+
+--------pop up end--------
+
+--------pop up css--------
+
+.contact .email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+.contact .email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+}
+
+--------pop up css end--------
+
+<div class="footer-wan">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          
+        </div>
+        <div class="text-center col-sm-6 col-md-3 item">
+          <h3 class="hatri-footer">Services</h3>
+          <ul>
+            <li><a href="#">Web design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Hosting</a></li>
+          </ul>
+        </div>
+        <div class="text-center col-sm-6 col-md-3 item">
+          <h3 class="hatri-footer">About</h3>
+          <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="text-center col-md-6 item text">
+          <h3 class="hatri-footer">Company Name</h3>
+          <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus
+            elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+        </div>
+        <div class="col medsos">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+      <div class="row my-5">
+        <img src="img/alinda_store.png" class="logo align-items-center" alt="">
+      </div>
+      <div class="row">
+        <div class="col-6 mt-5">
+          <img src="img/svg/login.svg" width="400" alt="">
+        </div>
+        <div class="col-6 mt-4">
+          <div class="card border-light shadow-sm p-3 mb-5 bg-body">
+            <div class="card-body">
+              <h4>Log In</h4>
+              <p class="mb-4">Silahkan log in dan selamat berbelanja</p>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" placeholder="password">
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary px-5 rounded-pill" type="submit">Log In</button>
+                <p class="text-center mt-2">Belum punya akun?
+                  <a href="signup.html" class="text-decoration-none">Sign In</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- section acoount -->
+    <section id="account">
+        <div class="container">
+            <div class="border row">
+                <div class="border col-md-4">
+                    <ul class="nav flex-column" role="tablist">
+                        <!-- my account -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="account-detail-tab" data-bs-toggle="tab"
+                                href="#account-detail" role="tab" aria-controls="account-detail" aria-selected="true">
+                                <i class="bi bi-person me-2"></i> My Account
+                            </a>
+                        </li>
+                        <!-- end -->
+
+                        <!-- my addres -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="address-tab" data-bs-toggle="tab" href="#address" role="tab"
+                                aria-controls="address" aria-selected="true">
+                                <i class="bi bi-pin-map me-2"></i> My Address
+                            </a>
+                        </li>
+                        <!-- end -->
+
+                        <!-- order -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab"
+                                aria-controls="orders" aria-selected="false">
+                                <i class="bi bi-truck me-2"></i> Orders
+                            </a>
+                        </li>
+                        <!-- end -->
+
+                        <!-- log out -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">
+                                <i class="bi bi-box-arrow-right me-2"></i> Logout
+                            </a>
+                        </li>
+                        <!-- end -->
+                    </ul>
+                </div>
+
+                <div class="border col-md-8">
+                    <div class="tab-content dashboard-content">
+                        <!-- my account -->
+                        <div class="tab-pane fade" id="account-detail" role="tabpanel"
+                            aria-labelledby="account-detail-tab">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>My Account</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Already have an account? <a href="">Log in instead!</a>
+                                    </p>
+                                    <form method="post" name="enq">
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label>First Name <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="name" type="text">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Last Name <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="phone">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Display Name <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="dname" type="text">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Email Address <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="email"
+                                                    type="email">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Current Password <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="password"
+                                                    type="password">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>New Password <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="npassword"
+                                                    type="password">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Confirm Password <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="cpassword"
+                                                    type="password">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-fill-out submit" name="submit"
+                                                    value="Submit">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+
+                        <!-- my addres -->
+                        <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0">Alamat Rumahmu</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <address>4299 Express Lane<br>
+                                                Sarasota, <br>FL 34249 USA <br>Phone: 1.941.227.4444</address>
+                                            <p>Sarasota</p>
+                                            <a href="#" class="btn-small">Edit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+
+                        <!-- order -->
+                        <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Your Orders</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Order</th>
+                                                    <th>Date</th>
+                                                    <th>Status</th>
+                                                    <th>Total</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>#2366</td>
+                                                    <td>August 02, 2020</td>
+                                                    <td>Completed</td>
+                                                    <td>$280.00 for 3 item</td>
+                                                    <td><a href="#" class="btn-small d-block">View</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section acoount end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="account">
+        <div class="container">
+            <div class="border row">
+                <div class="border col-md-4 mt-5">
+                    <ul class="nav flex-column" id="nav-option">
+                        <!-- my account -->
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#my-account">
+                                <i class="bi bi-person me-2"></i> My Account
+                            </a>
+                        </li>
+                        <!-- end -->
+
+                        <!-- my addres -->
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#address">
+                                <i class="bi bi-pin-map me-2"></i> My Address
+                            </a>
+                        </li>
+                        <!-- end -->
+
+                        <!-- order -->
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#orders">
+                                <i class="bi bi-truck me-2"></i> Orders
+                            </a>
+                        </li>
+                        <!-- end -->
+
+                        <!-- log out -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">
+                                <i class="bi bi-box-arrow-right me-2"></i> Logout
+                            </a>
+                        </li>
+                        <!-- end -->
+                    </ul>
+                </div>
+
+                <div class="border col-md-8 mt-5">
+                    <div class="tab-content dashboard-content">
+                        <!-- my account -->
+                        <div class="tab-pane active show fade" id="my-account">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>My Account</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Already have an account? <a href="">Log in instead!</a>
+                                    </p>
+                                    <form method="post" name="enq">
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label>First Name <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="name" type="text">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Last Name <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="phone">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Display Name <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="dname" type="text">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Email Address <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="email"
+                                                    type="email">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Current Password <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="password"
+                                                    type="password">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>New Password <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="npassword"
+                                                    type="password">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label>Confirm Password <span class="required">*</span></label>
+                                                <input required="" class="form-control square" name="cpassword"
+                                                    type="password">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-fill-out submit" name="submit"
+                                                    value="Submit">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+
+                        <!-- my addres -->
+                        <div class="tab-pane fade" id="address">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0">Alamat Rumahmu</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <address>4299 Express Lane<br>
+                                                Sarasota, <br>FL 34249 USA <br>Phone: 1.941.227.4444</address>
+                                            <p>Sarasota</p>
+                                            <a href="#" class="btn-small">Edit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+
+                        <!-- order -->
+                        <div class="tab-pane fade" id="orders">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Your Orders</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Order</th>
+                                                    <th>Date</th>
+                                                    <th>Status</th>
+                                                    <th>Total</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>#2366</td>
+                                                    <td>August 02, 2020</td>
+                                                    <td>Completed</td>
+                                                    <td>$280.00 for 3 item</td>
+                                                    <td><a href="#" class="btn-small d-block">View</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+heroo
+<div class="container col-xxl-8 px-4 mt-5 mb-2">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="assets/img/hero.png" class="hero d-block mx-lg-auto img-fluid" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 hawan fw-bold lh-1 my-4">
+            Temukan Produk dengan Kualitas Terbaik Hanya di Alinda Store
+          </h1>
+          <p class="lead partu">
+            Telusuri berbagai macam produk-produk kami untuk keperluan menjahitmu disini dan temukan produk kami yang
+            cocok untuk Anda!
+          </p>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="all-produk.html" class="btn button-hero btn-lg mt-5 rounded-pill shadow">start to buy <i
+                class="bi bi-arrow-right my-auto"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

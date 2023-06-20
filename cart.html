@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- link CSS  -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- logo title bar -->
+  <link rel="icon" href="assets/img/logo_alinda.png" type="image/x-icon" />
+
+  <title>Toko Alinda | Cart</title>
+</head>
+
+<body>
+  <!-- navabar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+    <div class="container my-1">
+      <a href="index.html"><img src="assets/img/alinda_store.png" class="logo" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="menu navbar-nav mx-auto justify-content-center me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link menu-nav px-2">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="all-produk.html" class="nav-link menu-nav px-2">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link menu-nav px-2">Store</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link menu-nav px-2">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="menu navbar-nav">
+          <li class="nav-item">
+            <a href="cart.html" class="active btn me-2 nav-icon"><i class="bi bi-cart-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="account.html" class=" btn nav-icon"><i class="bi bi-person-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navabar end -->
+
+  <!-- section cart -->
+  <section id="cart">
+    <div class="container">
+      <h6 class="text-center hanam-cart my-5">
+        selangkah lagi barang ini akan bisa jadi milikmu
+      </h6>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="table-responsive">
+              <table class="table-cart table text-center ">
+                <thead>
+                  <tr class="main-heading">
+                    <th scope="col">Produk</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Jumlah Barang</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Hapus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="align-middle">
+                      <figure class="pt-4 figure d-flex justify-content-evenly">
+                        <img src="assets/img/1.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">
+                          <a href="produk-one.html" class="text-decoration-none">
+                            <h4 class="hampat-cart">Benang Jahit</h4></a>
+                          <p class="p-cart">Barang yang kami jual merupakan produk dari toko kami</p>
+                        </figcaption>
+                      </figure>
+                    </td>
+
+                    <td class="align-middle">
+                      <span>Rp.500.000,-</span>
+                    </td>
+
+                    <td class="align-middle">
+                      <div class="up-down m-auto">
+                        <button class="btn btn-sm btn-updown" id="add">+</button>
+                        <input class="border input rounded-3" type="text" id="qtyBox" readonly="" value="0">
+                        <button class="btn btn-sm btn-updown" id="sub">-</button>
+                      </div>
+                    </td>
+
+                    <td class="align-middle">
+                      <span>Rp.500.000,-</span>
+                    </td>
+
+                    <td class="align-middle">
+                      <a href="#" class="trash">
+                        <i class="bi bi-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="cart-action py-5 text-end">
+              <a href="checkout.html" class="btn rounded-pill px-4 py-2 next-buy">Beli sekarang <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <!-- section cart end -->
+
+
+  <!-- footer section -->
+  <div class="footer-wan">
+    <div class="container">
+      <div class="row pb-4">
+        <div class="mt-3 col-lg-4 col-md-4 col-sm-6 text-center">
+          <img src="assets/img/alinda_store.png" class="ali" alt="">
+          <p class="p-footer pt-3">Dapatkan semua informasi terbaru tentang barang baru yang ready stock hanya
+            di Alinda
+            store</p>
+        </div>
+        <div class="mt-3 col-lg-4 col-md-4 col-sm-6 text-center">
+          <h3 class="hatri-footer">Navigation</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Produk</a></li>
+            <li><a href="index.html">Store</a></li>
+            <li><a href="index.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mt-3 col-lg-4 col-md-4 col-sm-12 text-sm-center text-center">
+          <h3 class="hatri-footer">Information</h3>
+          <ul>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="mt-5 col-lg-12 col-md-12 col-sm-12">
+          <div class="col medsos">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="my-2 text-center">
+            &copy; Copyright 2023 - <strong><span>Alinda Store</span></strong>. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section end-->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="assets/js/script.js"></script>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
